@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Call Is Confirmed | Live Well Home Group</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sage:#6A897E;--sage-dark:#57736A;--slate:#688389;--ink:#2E3833;
+    --paper:#FFFFFF;--mist:#F2F4F3;--sand:#E9EDEC;--line:#D9E0DD;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Figtree',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+  img{max-width:100%;display:block}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  .narrow{max-width:720px;margin:0 auto;padding:0 24px}
+  .btn{display:inline-block;background:var(--sage);color:#fff;text-decoration:none;font-weight:600;
+       letter-spacing:.08em;text-transform:uppercase;font-size:15px;padding:18px 42px;border-radius:0;transition:background .2s}
+  .btn:hover{background:var(--sage-dark)}
+  header{padding:8px 0;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between}
+  header img.logo{height:36px;width:auto}
+  header .phone{font-weight:600;color:var(--sage);text-decoration:none;font-size:15px;letter-spacing:.05em}
+
+  .hero{background:var(--mist);padding:16px 0 24px;text-align:center}
+  .check{width:44px;height:44px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;
+         justify-content:center;margin:0 auto 10px;font-size:22px;font-weight:700}
+  h1{font-weight:700;font-size:clamp(24px,3vw,32px);line-height:1.15;margin-bottom:8px}
+  .hero p{font-size:15.5px;color:#54615B;max-width:560px;margin:0 auto}
+  .hero p strong{color:var(--ink)}
+
+  /* Main pre-call video */
+  .video-section{padding:20px 0 8px}
+  .video-frame{position:relative;max-width:560px;margin:0 auto;aspect-ratio:16/9;
+               background:linear-gradient(135deg,var(--sage) 0%,var(--slate) 100%);
+               display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+               box-shadow:0 24px 60px rgba(46,56,51,.18)}
+  .video-frame .play{width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;
+                     align-items:center;justify-content:center;cursor:pointer;transition:transform .2s}
+  .video-frame .play:hover{transform:scale(1.06)}
+  .video-frame .play svg{margin-left:6px}
+  .video-frame .vf-label{color:rgba(255,255,255,.92);font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+                         font-size:13px;padding:0 16px;text-align:center}
+  /* ============================================================
+     PRE-CALL VIDEO PLACEHOLDER — replace the .video-frame div
+     with the real embed when the video is recorded, e.g.:
+     <div style="position:relative;max-width:720px;margin:0 auto;aspect-ratio:16/9;box-shadow:0 24px 60px rgba(46,56,51,.18)">
+       <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen></iframe>
+     </div>
+     ============================================================ */
+  .video-note{text-align:center;color:#7A8680;font-size:14px;margin-top:14px}
+
+  /* Breakout videos */
+  .breakouts{padding:64px 0}
+  h2{font-weight:700;font-size:clamp(22px,3vw,30px);text-align:center;margin-bottom:10px}
+  .breakouts .lead{text-align:center;color:#54615B;max-width:600px;margin:0 auto 40px;font-size:16.5px}
+  .bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .bcard{border:1px solid var(--line);background:#fff}
+  .bthumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,var(--sand) 0%,#cfd8d4 100%);
+          display:flex;align-items:center;justify-content:center}
+  .bthumb .play{width:52px;height:52px;border-radius:50%;background:var(--sage);display:flex;
+                align-items:center;justify-content:center;cursor:pointer;transition:transform .2s}
+  .bthumb .play:hover{transform:scale(1.08)}
+  .bthumb .play svg{margin-left:4px}
+  /* ============================================================
+     BREAKOUT VIDEO PLACEHOLDERS — swap each .bthumb div for a
+     real embed as Joe & Charity record them. Delete any card
+     that doesn't get recorded. Suggested topics are below.
+     ============================================================ */
+  .bbody{padding:18px 20px 22px}
+  .bbody h3{font-size:16.5px;font-weight:700;line-height:1.3;margin-bottom:6px}
+  .bbody p{font-size:14px;color:#54615B}
+
+  footer{background:var(--ink);color:#B9C4BF;padding:40px 0;font-size:14px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+  footer a{color:#fff;text-decoration:none}
+  footer .brand{font-weight:700;color:#fff;font-size:16px;margin-bottom:4px}
+  footer .eho{font-size:12.5px;opacity:.75;max-width:420px}
+  @media(max-width:860px){.bgrid{grid-template-columns:1fr}header img.logo{height:42px}}
+</style>
+<!-- OpenAI ads pixel -->
+<script>
+!function(w,d,s,u){
+  if(w.oaiq)return;
+  var q=function(){q.q.push(arguments)};
+  q.q=[];
+  w.oaiq=q;
+  var j=d.createElement(s);
+  j.async=1;
+  j.src=u;
+  var f=d.getElementsByTagName(s)[0];
+  f.parentNode.insertBefore(j,f)
+}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");
+
+oaiq("init",{
+  pixelId:"AJRwvmgPPnLMSzjyCkRxEh",
+  debug:true
+});
+</script>
+
+<!-- Conversion: appointment scheduled -->
+<script>
+oaiq(
+  "measure",
+  "appointment_scheduled",
+  { type: "customer_action" }
+);
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '569947743464593');
+fbq('track', 'PageView');
+fbq('track', 'Schedule');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=569947743464593&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yjqtp2uwo6");
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="https://cdn.lofty.com/image/fs/844769881086039/website/145963/cmsbuild/202588_b02041ca8a5d4391.png" alt="Live Well Home Group | Real Broker LLC">
+    <a class="phone" href="tel:+13602688420">(360) 268-8420</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="narrow">
+    <div class="check">✓</div>
+    <h1>Your call is confirmed.</h1>
+    <p>You'll get the details by email, along with a calendar invite. <strong>Please watch this video prior to our call</strong> to make sure it's the right fit for you.</p>
+  </div>
+</section>
+
+<section class="video-section">
+  <div class="narrow">
+    <!-- PRE-CALL VIDEO EMBED GOES HERE (see comment in CSS) -->
+    <div class="video-frame">
+      <iframe src="https://player.vimeo.com/video/1227361426?h=7cccae9f72" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;background:#000" title="Pre-call fit video"></iframe>
+    </div>
+    <p class="video-note">About 3 minutes. It covers who we help best, how we work, and what we'll do together on the call.</p>
+  </div>
+</section>
+
+<section class="breakouts">
+  <div class="wrap">
+    <h2>Want to go deeper before we talk?</h2>
+    <p class="lead">A few short videos from Joe &amp; Charity that answer the questions buyers usually bring to the call.</p>
+    <div class="bgrid">
+      <div class="bcard">
+        <div class="bthumb">
+          <iframe src="https://player.vimeo.com/video/1227361390?h=18e9597c4f" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;background:#000" title="How we work with buyers"></iframe>
+        </div>
+        <div class="bbody">
+          <h3>How we work with buyers</h3>
+          <p>What working together actually looks like, from first tour to keys in hand, and what it costs (usually nothing out of pocket).</p>
+        </div>
+      </div>
+      <div class="bcard">
+        <div class="bthumb">
+          <iframe src="https://player.vimeo.com/video/1227361394?h=b4500d1d0b" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;background:#000" title="How our buyers win without overpaying"></iframe>
+        </div>
+        <div class="bbody">
+          <h3>How our buyers win without overpaying</h3>
+          <p>A real example of an offer that beat a higher one, and the exact terms that made the difference.</p>
+        </div>
+      </div>
+      <div class="bcard">
+        <div class="bthumb">
+          <iframe src="https://player.vimeo.com/video/1227361392?h=1c5801fb4d" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;background:#000" title="What to have ready for our call"></iframe>
+        </div>
+        <div class="bbody">
+          <h3>What to have ready for our call</h3>
+          <p>Nothing is required, but five minutes of prep makes the call twice as useful. Here's what helps.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand">Live Well Home Group · Real Broker LLC</div>
+      <div>400 Union Ave SE Ste 200, Olympia, WA 98501 · <a href="tel:+13602688420">(360) 268-8420</a> · <a href="mailto:info@thelivewellgroup.com">info@thelivewellgroup.com</a></div>
+      <div><a href="https://thelivewellgroup.com">thelivewellgroup.com</a> · <a href="https://www.youtube.com/@thelivewellhomegroup" target="_blank" rel="noopener">YouTube: Living in Olympia &amp; Tacoma</a></div>
+    </div>
+    <div class="eho">Equal Housing Opportunity. Information is deemed reliable but not guaranteed.</div>
+  </div>
+</footer>
+
+</body>
+</html>
