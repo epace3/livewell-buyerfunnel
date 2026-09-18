@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buying a Home in the South Sound? Watch This First | Live Well Home Group</title>
+<meta name="description" content="Before you make an offer on a home in Olympia, Lacey, Tumwater, or anywhere in the South Sound, watch this short video. What to offer, what to check, and how to avoid overpaying.">
+<meta name="robots" content="noindex, follow"><!-- Ad landing page: remove noindex if you want it indexed -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sage:#6A897E;          /* Live Well primary */
+    --sage-dark:#57736A;
+    --slate:#688389;         /* secondary accent */
+    --ink:#2E3833;
+    --paper:#FFFFFF;
+    --mist:#F2F4F3;          /* light neutral section bg */
+    --sand:#E9EDEC;
+    --line:#D9E0DD;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Figtree',sans-serif;font-weight:400;color:var(--ink);background:var(--paper);line-height:1.6}
+  img{max-width:100%;display:block}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  .narrow{max-width:760px;margin:0 auto;padding:0 24px}
+
+  /* Buttons: square corners, brand style */
+  .btn{display:inline-block;background:var(--sage);color:#fff;text-decoration:none;font-weight:600;
+       letter-spacing:.08em;text-transform:uppercase;font-size:15px;padding:18px 42px;border:none;
+       border-radius:0;cursor:pointer;transition:background .2s}
+  .btn:hover{background:var(--sage-dark)}
+  .btn.ghost{background:transparent;color:var(--sage);border:1.5px solid var(--sage)}
+  .btn.ghost:hover{background:var(--sage);color:#fff}
+
+  /* Header — slim so the hero fits above the fold */
+  header{padding:8px 0;border-bottom:1px solid var(--line);background:#fff}
+  header .wrap{display:flex;align-items:center;justify-content:space-between}
+  header img.logo{height:36px;width:auto}
+  header .phone{font-weight:600;color:var(--sage);text-decoration:none;letter-spacing:.05em;font-size:14px}
+
+  /* ============ ABOVE-THE-FOLD HERO ============
+     Core offer (H1) + VSL + Book-a-Call CTA all visible
+     without scrolling — verified at a 674px-tall viewport. */
+  .hero{background:var(--mist);padding:18px 0 24px;text-align:center}
+  .kicker{display:inline-block;color:var(--sage);font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+          font-size:11px;margin-bottom:8px}
+  h1{font-weight:700;font-size:clamp(24px,3vw,33px);line-height:1.14;max-width:780px;margin:0 auto 8px}
+  .hero p.sub{font-size:15.5px;color:#54615B;max-width:560px;margin:0 auto 16px}
+  .hero p.sub strong{color:var(--ink)}
+
+  .video-frame{position:relative;max-width:540px;margin:0 auto;aspect-ratio:16/9;
+               background:linear-gradient(135deg,var(--sage) 0%,var(--slate) 100%);
+               display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+               box-shadow:0 20px 50px rgba(46,56,51,.18)}
+  .video-frame .play{width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;
+                     align-items:center;justify-content:center;cursor:pointer;transition:transform .2s}
+  .video-frame .play:hover{transform:scale(1.06)}
+  .video-frame .play svg{margin-left:5px}
+  .video-frame .vf-label{color:rgba(255,255,255,.92);font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+                         font-size:12.5px;padding:0 16px}
+  /* ============================================================
+     VIDEO PLACEHOLDER — replace the .video-frame div below with
+     the real embed when the VSL is ready, e.g.:
+     <div style="position:relative;max-width:640px;margin:0 auto;aspect-ratio:16/9;box-shadow:0 20px 50px rgba(46,56,51,.18)">
+       <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen></iframe>
+     </div>
+     ============================================================ */
+
+  .hero .cta-row{margin-top:16px}
+  .hero .cta-row .btn{padding:15px 36px;font-size:14px}
+  .hero .reassure{margin-top:8px;font-size:13px;color:#7A8680}
+
+  /* Social proof line — sits just under the fold line */
+  .proofline{padding:16px 0;text-align:center;border-bottom:1px solid var(--line)}
+  .proofline .stars{color:#C99A2E;letter-spacing:3px;font-size:16px}
+  .proofline span{font-size:14px;color:#54615B;font-weight:600}
+
+  /* Three situations */
+  .situations{padding:64px 0}
+  h2{font-weight:700;font-size:clamp(24px,3.2vw,34px);line-height:1.2;text-align:center;margin-bottom:12px}
+  .situations .lead{text-align:center;color:#54615B;max-width:640px;margin:0 auto 44px;font-size:18px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:#fff;border:1px solid var(--line);padding:32px 26px}
+  .card .num{font-weight:800;font-size:15px;color:var(--sage);letter-spacing:.15em;margin-bottom:12px}
+  .card h3{font-weight:700;font-size:19px;margin-bottom:10px;line-height:1.3}
+  .card p{font-size:15.5px;color:#54615B}
+  .cta-center{text-align:center;margin-top:44px}
+  .cta-center .reassure{margin-top:14px;font-size:14.5px;color:#7A8680}
+
+  /* Quote band */
+  .band{background:var(--sage);color:#fff;padding:56px 0;text-align:center}
+  .band blockquote{font-size:clamp(19px,2.4vw,24px);font-weight:500;line-height:1.5;max-width:760px;margin:0 auto 14px}
+  .band cite{font-style:normal;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:13px;opacity:.85}
+
+  /* About */
+  .about{padding:64px 0;background:var(--mist)}
+  .about .inner{display:grid;grid-template-columns:280px 1fr;gap:44px;align-items:center}
+  .about img.photo{width:100%;height:auto;box-shadow:0 16px 40px rgba(46,56,51,.16)}
+  .about h2{text-align:left}
+  .about p{color:#54615B;margin-bottom:14px}
+  .about p strong{color:var(--ink)}
+
+  /* Secondary offer — the free resource the VSL points to */
+  .offer{padding:72px 0}
+  .offer .box{background:#fff;border:1.5px solid var(--sage);padding:52px 46px;display:grid;
+              grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  .offer .tag{color:var(--sage);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:12.5px;margin-bottom:12px}
+  .offer h2{text-align:left;margin-bottom:14px}
+  .offer p{color:#54615B;margin-bottom:10px}
+  .offer ul{margin:16px 0 0 0;list-style:none}
+  .offer ul li{padding-left:28px;position:relative;margin-bottom:10px;color:#54615B;font-size:15.5px}
+  .offer ul li::before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:700}
+  form .field{margin-bottom:14px}
+  form label{display:block;font-weight:600;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;
+             color:var(--ink);margin-bottom:6px}
+  form input{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:0;font-family:'Figtree',sans-serif;
+             font-size:16px;background:var(--mist)}
+  form input:focus{outline:2px solid var(--sage);background:#fff}
+  form .btn{width:100%;text-align:center;margin-top:6px}
+  form .privacy{font-size:12.5px;color:#8b9992;margin-top:12px;text-align:center}
+
+  /* FAQ */
+  .faq{padding:64px 0;background:var(--mist)}
+  .faq .lead{text-align:center;color:#54615B;max-width:640px;margin:0 auto 36px;font-size:17px}
+  .faq-list{max-width:760px;margin:0 auto}
+  .faq details{background:#fff;border:1px solid var(--line);margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:16.5px;padding:20px 52px 20px 24px;list-style:none;position:relative}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:after{content:'+';position:absolute;right:22px;top:50%;transform:translateY(-50%);
+    font-size:22px;font-weight:400;color:var(--sage)}
+  .faq details[open] summary:after{content:'\2212'}
+  .faq details p{padding:0 24px 22px;color:#54615B;font-size:15.5px}
+
+  /* Final CTA */
+  .final{background:var(--ink);color:#fff;padding:64px 0;text-align:center}
+  .final h2{color:#fff;margin-bottom:10px}
+  .final p{color:#B9C4BF;margin-bottom:26px;font-size:17px}
+  .final .reassure{margin-top:14px;font-size:14px;color:#8b9992}
+
+  /* Footer */
+  footer{background:var(--ink);color:#B9C4BF;padding:44px 0;font-size:14px;border-top:1px solid rgba(255,255,255,.12)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:center}
+  footer a{color:#fff;text-decoration:none}
+  footer .brand{font-weight:700;color:#fff;font-size:16px;margin-bottom:4px}
+  footer .eho{font-size:12.5px;opacity:.75;max-width:420px}
+
+  @media(max-width:860px){
+    .cards{grid-template-columns:1fr}
+    .about .inner{grid-template-columns:1fr}
+    .about .photo{max-width:280px}
+    .offer .box{grid-template-columns:1fr;padding:36px 26px}
+    header img.logo{height:38px}
+    .hero{padding:22px 0 30px}
+  }
+</style>
+<!-- OpenAI ads pixel -->
+<script>
+!function(w,d,s,u){
+  if(w.oaiq)return;
+  var q=function(){q.q.push(arguments)};
+  q.q=[];
+  w.oaiq=q;
+  var j=d.createElement(s);
+  j.async=1;
+  j.src=u;
+  var f=d.getElementsByTagName(s)[0];
+  f.parentNode.insertBefore(j,f)
+}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");
+
+oaiq("init",{
+  pixelId:"AJRwvmgPPnLMSzjyCkRxEh",
+  debug:true
+});
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '569947743464593');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=569947743464593&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yjqtp2uwo6");
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <!-- Logo hotlinked from their site CDN. For production, download and self-host (see README). -->
+    <img class="logo" src="https://cdn.lofty.com/image/fs/844769881086039/website/145963/cmsbuild/202588_b02041ca8a5d4391.png" alt="Live Well Home Group | Real Broker LLC">
+    <a class="phone" href="tel:+13602688420">(360) 268-8420</a>
+  </div>
+</header>
+
+<!-- ============ ABOVE THE FOLD: core offer + VSL + book-a-call CTA ============ -->
+<section class="hero">
+  <div class="narrow">
+    <span class="kicker">For homebuyers in Olympia, Lacey, Tumwater &amp; the South Sound</span>
+    <h1>“What should I offer? What am I missing? Am I about to pay too much?”</h1>
+    <p class="sub">If you've been asking those questions, you're in the right place. In this short video, <strong>Joe &amp; Charity Slawter</strong> answer the exact questions South Sound buyers ask us every week, before you write an offer, not after.</p>
+
+    <!-- ================= VSL EMBED GOES HERE (see comment in CSS) ================= -->
+    <div class="video-frame">
+      <iframe src="https://player.vimeo.com/video/1227361484?h=4198c7a3ff" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;background:#000" title="Main VSL"></iframe>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn" href="https://calendly.com/thelivewellgroup/appointment?back=1" target="_blank" rel="noopener">Book a Call With Joe &amp; Charity</a>
+      <p class="reassure">15–20 minutes, free, no obligation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Social proof, directly under the offer -->
+<div class="proofline">
+  <span class="stars">★★★★★</span><br>
+  <span>5.0 on Google with 67 five-star reviews · Real Broker LLC · Serving Thurston, Pierce, Mason, Kitsap &amp; Lewis Counties</span>
+</div>
+
+<section class="situations" id="book">
+  <div class="wrap">
+    <h2>If you're in one of these three situations, let's talk.</h2>
+    <p class="lead">No pressure and no scripts. Just a straight conversation about where you're at and what your next step should be.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>You're touring homes without an agent</h3>
+        <p>You're going to open houses and scrolling listings daily, but nobody is protecting your side of the deal yet. Let's fix that before you fall in love with a house.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>You found the home. Now what do you offer?</h3>
+        <p>The wrong first number costs you the house or costs you thousands. We'll walk you through how to make a strong offer without simply paying more.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>You're 3–6 months out and want a plan</h3>
+        <p>Not ready to buy tomorrow? Smart. The buyers who win in this market are the ones who set their strategy, budget, and financing before they start touring.</p>
+      </div>
+    </div>
+    <div class="cta-center">
+      <a class="btn" href="https://calendly.com/thelivewellgroup/appointment?back=1" target="_blank" rel="noopener">Book a Call With Joe &amp; Charity</a>
+      <p class="reassure">15–20 minutes. No obligation. If we're not the right fit, we'll tell you.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <blockquote>“This was the first time I'd ever done the entire home-buying process… she responded promptly and professionally and never made me feel like I was asking too many questions.”</blockquote>
+    <cite>— L. Palmer, bought in Thurston County · Google Review</cite>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap inner">
+    <img class="photo" src="assets/joe-charity.jpg" alt="Joe &amp; Charity Slawter, Live Well Home Group">
+    <div>
+      <h2>Local expertise. Extraordinary service.</h2>
+      <p><strong>We're Joe &amp; Charity Slawter</strong>, married 30+ years and co-owners of the Live Well Home Group. We've helped hundreds of buyers across the South Puget Sound area. On our YouTube channel, <strong>Living In Olympia &amp; Tacoma</strong>, we share honest answers to the real questions people have about living, buying, and selling here.</p>
+      <p>We started Live Well because we believe home matters, and that part of living well means loving where you live. When you talk to us, you get straight answers, not a sales pitch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ: the questions buyers actually ask before they'll book -->
+<section class="faq">
+  <div class="wrap">
+    <h2>Questions buyers ask us every week</h2>
+    <p class="lead">Straight answers, the same ones you'd get on the phone.</p>
+    <div class="faq-list">
+      <details>
+        <summary>Does it cost me anything to work with you?</summary>
+        <p>The call is completely free, and in most cases so is our buyer representation. Our compensation is typically handled within the transaction, and we'll explain exactly how it works, in plain English, before you commit to anything.</p>
+      </details>
+      <details>
+        <summary>Do I need to be pre-approved before booking a call?</summary>
+        <p>No. The call is a great place to start if you haven't talked to a lender yet. We'll connect you with trusted local lenders and show you how pre-approval actually strengthens your offer.</p>
+      </details>
+      <details>
+        <summary>I'm 3–6 months out. Is it too early to talk?</summary>
+        <p>It's the ideal time. The buyers who win in this market set their strategy, budget, and financing before they start touring. When the right home shows up, you'll be ready to move faster than everyone else.</p>
+      </details>
+      <details>
+        <summary>Isn't it a bad time to buy right now?</summary>
+        <p>The right time to buy is when it's right for your life and your finances, and there are real opportunities in every market. On the call we'll look at what's actually happening in your price range and area, so you decide with data instead of headlines.</p>
+      </details>
+      <details>
+        <summary>How can I compete without offering more money?</summary>
+        <p>Price is only one part of an offer. Sellers also care about certainty and convenience: terms, timelines, deposit, and contingencies. That's exactly what we'll walk you through on the call.</p>
+      </details>
+      <details>
+        <summary>I'm relocating from out of state. Can you help remotely?</summary>
+        <p>Yes, we do this all the time. We shoot detailed video walkthroughs of every home, handle negotiations, and manage the process end to end. Buyers have purchased with us from 3,000 miles away.</p>
+      </details>
+      <details>
+        <summary>What happens on the call? Is it a sales pitch?</summary>
+        <p>No pitch. It's 15–20 minutes about your goals, your timeline, and your market, and you'll leave with a clear next step whether or not we work together. If we're not the right fit, we'll tell you.</p>
+      </details>
+      <details>
+        <summary>What areas do you cover?</summary>
+        <p>Olympia, Lacey, Tumwater, Yelm, Tacoma, Lakewood, Puyallup, Shelton, Gig Harbor, and the wider Thurston, Pierce, Mason, Kitsap, and Lewis County area.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final">
+  <div class="narrow">
+    <h2>Your next home is out there. Let's go get it, on your terms.</h2>
+    <p>Book a free 15–20 minute call with Joe &amp; Charity.</p>
+    <a class="btn" href="https://calendly.com/thelivewellgroup/appointment?back=1" target="_blank" rel="noopener">Book a Call With Joe &amp; Charity</a>
+    <p class="reassure">Free · No obligation · Straight answers</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand">Live Well Home Group · Real Broker LLC</div>
+      <div>400 Union Ave SE Ste 200, Olympia, WA 98501 · <a href="tel:+13602688420">(360) 268-8420</a> · <a href="mailto:info@thelivewellgroup.com">info@thelivewellgroup.com</a></div>
+      <div><a href="https://thelivewellgroup.com">thelivewellgroup.com</a> · <a href="https://www.youtube.com/@thelivewellhomegroup" target="_blank" rel="noopener">YouTube: Living in Olympia &amp; Tacoma</a></div>
+    </div>
+    <div class="eho">Equal Housing Opportunity. Information is deemed reliable but not guaranteed. This is not a solicitation of currently listed properties.</div>
+  </div>
+</footer>
+
+<script>
+// Pass UTM parameters from the page URL through to all Calendly links
+// and fire a FormOpen pixel event when any booking CTA is clicked
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var utms = new URLSearchParams();
+  params.forEach(function (v, k) {
+    if (k.toLowerCase().indexOf("utm_") === 0) utms.append(k, v);
+  });
+  document.querySelectorAll('a[href*="calendly.com"]').forEach(function (a) {
+    if (utms.toString()) {
+      a.href += (a.href.indexOf("?") === -1 ? "?" : "&") + utms.toString();
+    }
+    a.addEventListener("click", function () {
+      if (typeof fbq === "function") {
+        fbq("trackCustom", "FormOpen", { content_name: "Book a Call" });
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
